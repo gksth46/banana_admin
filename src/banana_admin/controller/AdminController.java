@@ -4,12 +4,12 @@ import java.util.ArrayList;
 
 import banana_admin.dao.AdminDao;
 import banana_admin.domain.Admin;
+import banana_admin.view.AdminDeleteView;
+import banana_admin.view.AdminInsertView;
+import banana_admin.view.AdminSelectAllView;
+import banana_admin.view.AdminUpdateView;
 import banana_admin.view.AlertView;
-import banana_admin.view.InsertAdminView;
 import banana_admin.view.MenuAdminView;
-import banana_admin.view.deleteAdminView;
-import banana_admin.view.selectAllAdminView;
-import banana_admin.view.updateAdminView;
 
 public class AdminController {
 
@@ -31,7 +31,7 @@ public class AdminController {
 
 	public void menuViewToInsertView(){
 		
-	      InsertAdminView insertAdminView = new InsertAdminView();
+	      AdminInsertView insertAdminView = new AdminInsertView();
 	      insertAdminView.insertAdminView();
 	      
 	}
@@ -56,7 +56,7 @@ public class AdminController {
 
 		ArrayList<Admin> adminSelectAll = adminDao.adminSelectAll();
 
-		selectAllAdminView adminSelectAllView = new selectAllAdminView();
+		AdminSelectAllView adminSelectAllView = new AdminSelectAllView();
 		adminSelectAllView.adminSelectAll(adminSelectAll);
 
 	}
@@ -78,7 +78,7 @@ public class AdminController {
 	public void requestUpdateAdminNumber() {
 
 		//관리자번호 입력받는 화면
-		updateAdminView adminUpdateView = new updateAdminView();
+		AdminUpdateView adminUpdateView = new AdminUpdateView();
 		adminUpdateView.searchUpdateAdminNumber();
 
 	}
@@ -87,7 +87,7 @@ public class AdminController {
 	public void requestUpdateAdmin(int adminNumber) {
 
 		//수정 입력받는 화면
-		updateAdminView adminUpdateView = new updateAdminView();
+		AdminUpdateView adminUpdateView = new AdminUpdateView();
 		adminUpdateView.adminUpdateInfo(adminNumber);
 
 	}
@@ -109,7 +109,7 @@ public class AdminController {
 	//관리자 삭제
 	public void requestDelete() {
 
-		deleteAdminView adminDeleteView = new deleteAdminView();
+		AdminDeleteView adminDeleteView = new AdminDeleteView();
 
 		int searchDeleteAdminNumber = adminDeleteView.searchDeleteAdminNumber();
 
