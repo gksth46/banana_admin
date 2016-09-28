@@ -5,19 +5,11 @@ import java.util.Scanner;
 import banana_admin.controller.Controllers;
 import banana_admin.domain.Admin;
 
-<<<<<<< HEAD:src/banana_admin/view/AdminUpdateView.java
-public class AdminUpdateView {
-
-	private Scanner keyboard;
-
-	public AdminUpdateView() {
-=======
 public class UpdateAdminView {
 
 	private Scanner keyboard;
 
 	public UpdateAdminView() {
->>>>>>> refs/remotes/yuns111/master:src/banana_admin/view/updateAdminView.java
 
 		keyboard = new Scanner(System.in);
 

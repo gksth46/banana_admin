@@ -2,19 +2,11 @@ package banana_admin.view;
 
 import java.util.Scanner;
 
-<<<<<<< HEAD:src/banana_admin/view/AdminDeleteView.java
-public class AdminDeleteView {
-	
-	private Scanner keyboard;
-	
-	public AdminDeleteView() {
-=======
 public class DeleteAdminView {
 	
 	private Scanner keyboard;
 	
 	public DeleteAdminView() {
->>>>>>> refs/remotes/yuns111/master:src/banana_admin/view/deleteAdminView.java
 		
 		keyboard = new Scanner(System.in);
 		

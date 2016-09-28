@@ -4,10 +4,6 @@ public class Main {
 
 	public static void main(String[] args) {
 
-<<<<<<< HEAD
-=======
-
->>>>>>> refs/remotes/yuns111/master
 		new Controllers();
 		System.out.println("관리자모드");
 		Controllers.getTicketController().goToTicketMenuView();

@@ -4,20 +4,12 @@ import java.util.ArrayList;
 
 import banana_admin.dao.AdminDao;
 import banana_admin.domain.Admin;
-import banana_admin.view.AdminDeleteView;
-import banana_admin.view.AdminInsertView;
-import banana_admin.view.AdminSelectAllView;
-import banana_admin.view.AdminUpdateView;
 import banana_admin.view.AlertView;
-<<<<<<< HEAD
-import banana_admin.view.MenuAdminView;
-=======
 import banana_admin.view.DeleteAdminView;
 import banana_admin.view.InsertAdminView;
 import banana_admin.view.MenuAdminView;
 import banana_admin.view.SelectAllAdminView;
 import banana_admin.view.UpdateAdminView;
->>>>>>> refs/remotes/yuns111/master
 
 public class AdminController {
 
@@ -37,21 +29,12 @@ public class AdminController {
       
    }
 
-<<<<<<< HEAD
 	public void menuViewToInsertView(){
 		
-	      AdminInsertView insertAdminView = new AdminInsertView();
+	      InsertAdminView insertAdminView = new InsertAdminView();
 	      insertAdminView.insertAdminView();
 	      
 	}
-=======
-   public void menuViewToInsertView(){
-      
-         InsertAdminView insertAdminView = new InsertAdminView();
-         insertAdminView.insertAdminView();
-         
-   }
->>>>>>> refs/remotes/yuns111/master
 
    public void requestRegisterAdmin(Admin adminDomain){
 
@@ -73,13 +56,8 @@ public class AdminController {
 
       ArrayList<Admin> adminSelectAll = adminDao.adminSelectAll();
 
-<<<<<<< HEAD
-		AdminSelectAllView adminSelectAllView = new AdminSelectAllView();
-		adminSelectAllView.adminSelectAll(adminSelectAll);
-=======
       SelectAllAdminView adminSelectAllView = new SelectAllAdminView();
       adminSelectAllView.adminSelectAll(adminSelectAll);
->>>>>>> refs/remotes/yuns111/master
 
    }
 
@@ -99,26 +77,16 @@ public class AdminController {
    //관리자 수정 번호 요청
    public void requestUpdateAdminNumber() {
 
-<<<<<<< HEAD
-		//관리자번호 입력받는 화면
-		AdminUpdateView adminUpdateView = new AdminUpdateView();
-		adminUpdateView.searchUpdateAdminNumber();
-=======
       //관리자번호 입력받는 화면
       UpdateAdminView adminUpdateView = new UpdateAdminView();
       adminUpdateView.searchUpdateAdminNumber();
    }
->>>>>>> refs/remotes/yuns111/master
 
    //관리자 수정 요청
    public void requestUpdateAdmin(int adminNumber) {
 
 		//수정 입력받는 화면
-<<<<<<< HEAD
-		AdminUpdateView adminUpdateView = new AdminUpdateView();
-=======
 		UpdateAdminView adminUpdateView = new UpdateAdminView();
->>>>>>> refs/remotes/yuns111/master
 		adminUpdateView.adminUpdateInfo(adminNumber);
 
    }
@@ -140,11 +108,7 @@ public class AdminController {
    //관리자 삭제
    public void requestDelete() {
 
-<<<<<<< HEAD
-		AdminDeleteView adminDeleteView = new AdminDeleteView();
-=======
 		DeleteAdminView adminDeleteView = new DeleteAdminView();
->>>>>>> refs/remotes/yuns111/master
 
       int searchDeleteAdminNumber = adminDeleteView.searchDeleteAdminNumber();
 
@@ -157,6 +121,5 @@ public class AdminController {
       }
 
    }
-   
 
 }
