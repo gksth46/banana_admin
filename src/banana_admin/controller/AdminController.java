@@ -57,8 +57,6 @@ public class AdminController {
 
 	public void requestRegisterAdmin(Admin adminDomain){
 
-		//dao로 보내기.
-
 		boolean success = adminDao.insertAdmin(adminDomain);
 
 		if(success){
@@ -68,6 +66,8 @@ public class AdminController {
 		} else {
 			System.out.println("관리자 등록에 실패했습니다.");
 		}
+
+		Controllers.getAdminController().requestSelectAllAdmin();
 	}
 
 	//관리자 목록 
@@ -122,6 +122,7 @@ public class AdminController {
 			new AlertView().alert("관리자 수정을 실패했습니다.");
 		}
 
+		Controllers.getAdminController().requestSelectAllAdmin();
 	}
 
 	//관리자 삭제
@@ -143,6 +144,13 @@ public class AdminController {
 		} else {
 			new AlertView().alert("관리자 삭제를 실패했습니다.");
 		}
+
+		Controllers.getAdminController().requestSelectAllAdmin();
 	}
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> refs/remotes/yuns111/master
 }
