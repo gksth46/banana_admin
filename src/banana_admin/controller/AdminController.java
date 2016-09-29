@@ -148,9 +148,4 @@ public class AdminController {
 		Controllers.getAdminController().requestSelectAllAdmin();
 	}
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> refs/remotes/yuns111/master
 }
