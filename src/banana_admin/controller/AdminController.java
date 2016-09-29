@@ -21,16 +21,14 @@ public class AdminController {
 
 	}
 
-<<<<<<< HEAD
 	public void menuViewToInsertView(){
 		
 	      InsertAdminView insertAdminView = new InsertAdminView();
 	      insertAdminView.insertAdminView();
 	      
 	}
-=======
+
 	public void goToMenu() {
->>>>>>> refs/remotes/yuns111/master
 
 		AdminMenuView menuAdminView = new AdminMenuView();
 		menuAdminView.adminMenuView();
@@ -56,14 +54,6 @@ public class AdminController {
 	public void goToMAdminManage(){
 		AdminMenuView menuAdminView = new AdminMenuView();
 		menuAdminView.adminManage();
-	}
-
-
-	public void menuViewToInsertView(){
-
-		InsertAdminView insertAdminView = new InsertAdminView();
-		insertAdminView.insertAdminView();
-
 	}
 
 	public void requestRegisterAdmin(Admin adminDomain){
@@ -155,10 +145,5 @@ public class AdminController {
 			new AlertView().alert("관리자 삭제를 실패했습니다.");
 		}
 	}
-
-<<<<<<< HEAD
-   }
-=======
->>>>>>> refs/remotes/yuns111/master
 
 }

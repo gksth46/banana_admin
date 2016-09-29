@@ -16,13 +16,8 @@ public class InsertAdminView {
 	}
 
 	public void insertAdminView(){
-<<<<<<< HEAD
-
-		System.out.println("관리자 아이디를 입력하세요.");
-=======
 		
-		System.out.print("관리자 아이디을 입력하세요 : ");
->>>>>>> refs/remotes/yuns111/master
+		System.out.println("관리자 아이디를 입력하세요.");
 		String insertAdminId = keyboard.next();
 		System.out.print("관리자 비밀번호를 입력하세요 : ");
 		String insertAdminPassWord = keyboard.next();
