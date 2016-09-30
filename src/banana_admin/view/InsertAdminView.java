@@ -14,8 +14,13 @@ public class InsertAdminView {
 		keyboard = new Scanner(System.in);
 
 	}
+<<<<<<< HEAD
 
 	public void insertAdminView(){
+=======
+	
+	public void insertAdminView() {
+>>>>>>> refs/remotes/yuns111/master
 		
 		System.out.println("관리자 아이디를 입력하세요.");
 		String insertAdminId = keyboard.next();
@@ -29,6 +34,11 @@ public class InsertAdminView {
 		Controllers.getAdminController().requestRegisterAdmin(adminDomain);
 
 	}
+<<<<<<< HEAD
 
 }
 
+=======
+	
+}
+>>>>>>> refs/remotes/yuns111/master
